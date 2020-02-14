@@ -1,5 +1,7 @@
 #The Process
 
+Using: Create-react-app, Material UI
+
 Session 1:
 Time: 4:15 PM - 6:35 PM (2 5-10 min breaks taken)
 Priorities: Minimum requirements
