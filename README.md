@@ -1,7 +1,7 @@
 #The Process
 
 Session 1:
-Time: 4:00 PM - 6:00 PM
+Time: 4:15 PM - 6:35 PM (2 5-10 min breaks taken)
 Priorities: Minimum requirements
 Completed:
 
