@@ -6,6 +6,8 @@ Containers: TodoList, TodoForm
 
 Components: TodoItem, Selection, InputBar
 
+Handlers: createTodo, deleteTodo, sortTodos
+
 Sort: Able to sort todo items by priority (very high - very low) and order created (id number)
 
 Selection: Able to highlight a todo
