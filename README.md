@@ -1,3 +1,13 @@
+# Instructions
+
+To install and start:
+- clone repository
+- npm install
+- npm start
+
+To test: 
+- npm run test
+
 # The Process
 
 Using: Create-React-App, Material UI, Jest and React testing library.
