@@ -2,6 +2,10 @@
 
 Using: Create-react-app, Material UI
 
+Containers: TodoList, TodoForm
+
+Components: TodoItem, Selection, InputBar
+
 Time log:
 _________
 
