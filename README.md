@@ -3,12 +3,13 @@ Hello Formstack Team!
 # Instructions
 
 To install and start:
-- clone repository
+- git clone https://github.com/yangfreezy/formstack-frontend.git
+- cd frontend-formstack
 - npm install
 - npm start
 
 To test: 
-- npm run test
+- npm run test, then press a
 
 # The Process
 
