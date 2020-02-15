@@ -1,3 +1,13 @@
+# Instructions
+
+To install and start:
+- clone repository
+- npm install
+- npm start
+
+To test: 
+- npm run test
+
 # The Process
 
 Using: Create-React-App, Material UI, Jest and React testing library.
@@ -23,11 +33,16 @@ Time: 4:15 PM - 6:35 PM (2x 5-10 min breaks)
 Priorities: Meet basic requirements
 
 Completed:
+- pick a component library - material ui
+- sketch component hierarchy
 - added initialState.js
 - added TodoList
 - added TodoForm
-- added Delete
-- added Sort
+- added TodoItem
+- added Select functionality
+- added Delete functionality
+- added Create functionality
+- added Sort functionality
 _________
 
 Session 2:
