@@ -17,7 +17,9 @@ _________
 
 Session 1:
 Time: 4:15 PM - 6:35 PM (2x 5-10 min breaks)
-Priorities: Minimum requirements
+
+Priorities: Meet basic requirements
+
 Completed:
 - added initialState.js
 - added TodoList
@@ -28,7 +30,9 @@ _________
 
 Session 2:
 Time: 10:00 AM - 12:00 PM (2x 5-10 min breaks)
-Priorities: Refactor code, Add tests
+
+Priorities: Clean up any redundant code, refactor for reusability, add tests to components/containers
+
 Completed:
 - refactored InputBar, Selection components to be reusable
 - added render tests to all components/containers
