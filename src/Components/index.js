@@ -1,4 +1,5 @@
-import TodoList from "./TodoList";
-import TodoForm from "./TodoForm";
+import InputBar from "./InputBar/InputBar";
+import Selection from "./Selection/Selection";
+import TodoItem from "./TodoItem/TodoItem";
 
-export { TodoList, TodoForm };
+export { InputBar, Selection, TodoItem };

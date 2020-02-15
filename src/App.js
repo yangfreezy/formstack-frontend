@@ -1,45 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-import { TodoList, TodoForm } from "./Components/index";
-import { initialState, initialId } from "./Data/initialState";
+import { TodoList, TodoForm } from "./Containers/index";
+import { initialTodos, initialId } from "./Data/initialState";
 
-import "./App.css";
+import { createTodo, deleteTodo, sortTodos } from "./Handlers/Todo/index.js";
+
+import "./styles.css";
 
 function App() {
-  const [todos, setTodos] = useState(initialState);
+  const [todos, setTodos] = useState(initialTodos);
   const [id, setId] = useState(initialId);
 
-  const createTodo = (e, text, priority, priorityValue) => {
-    e.preventDefault();
-    setTodos([...todos, { id, text, priority, priorityValue }]);
-    setId(id + 1);
+  const handleCreate = (e, text, priority, priorityValue) => {
+    createTodo(e, text, priority, priorityValue, setTodos, todos, setId, id);
   };
 
-  const deleteTodos = (e, id) => {
-    e.preventDefault();
-    setTodos(todos.filter(todo => todo.id !== id));
+  const handleDelete = id => {
+    deleteTodo(id, todos, setTodos);
   };
 
-  const sortTodos = async sortBy => {
-    let newTodos = todos.slice();
-    if (sortBy === "Priority") {
-      newTodos.sort((a, b) => {
-        return b.priorityValue - a.priorityValue;
-      });
-    }
-    if (sortBy === "Created") {
-      newTodos.sort((a, b) => {
-        return a.id - b.id;
-      });
-    }
-    console.log(newTodos);
-    setTodos(newTodos);
+  const handleSort = sortBy => {
+    sortTodos(sortBy, todos, setTodos);
   };
 
   return (
     <div className="App">
-      <TodoForm createTodo={createTodo} sortTodos={sortTodos} />
-      <TodoList todos={todos} deleteTodos={deleteTodos} />
+      <TodoForm createTodo={handleCreate} sortTodos={handleSort} />
+      <TodoList todos={todos} deleteTodo={handleDelete} />
     </div>
   );
 }

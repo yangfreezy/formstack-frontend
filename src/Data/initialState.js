@@ -1,4 +1,4 @@
-const initialState = [
+const initialTodos = [
   {
     id: 0,
     text: "This should be first on created, third on priority!",
@@ -26,4 +26,18 @@ const initialState = [
 ];
 
 const initialId = 4;
-export { initialState, initialId };
+const initialPriority = "Low";
+const initialPriorityValue = 1;
+const initialSortByState = "Created";
+const initialTodoText = "";
+const initialSelectedState = Infinity;
+
+export {
+  initialTodos,
+  initialId,
+  initialPriority,
+  initialPriorityValue,
+  initialSortByState,
+  initialTodoText,
+  initialSelectedState
+};
