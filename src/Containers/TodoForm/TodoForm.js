@@ -3,24 +3,20 @@ import React, { useState } from "react";
 import { Selection, InputBar } from "../../Components/index";
 
 import {
-  initialPriority,
-  initialPriorityValue,
-  initialSortByState,
-  initialTodoText
-} from "../../Data/initialState";
+  defaultPriority,
+  defaultPriorityValue,
+  defaultSortBy,
+  defaultTodoText
+} from "../../Data/defaultState";
 
 import "../../styles.css";
 
 const TodoForm = ({ createTodo, sortTodos }) => {
-  const [sortBy, setSortBy] = useState(initialSortByState);
-  const [priority, setPriority] = useState(initialPriority);
-  const [priorityValue, setPriorityValue] = useState(initialPriorityValue);
-  const [todoText, setTodoText] = useState(initialTodoText);
-
-  const handleSortChange = e => {
-    setSortBy(e.target.value);
-    sortTodos(e.target.value);
-  };
+  const [todoText, setTodoText] = useState(defaultTodoText);
+  const [sortBy, setSortBy] = useState(defaultSortBy);
+  const [priority, setPriority] = useState(defaultPriority);
+  // Priority Value is a numeric equivalent of priority used to sort them
+  const [priorityValue, setPriorityValue] = useState(defaultPriorityValue);
 
   const priorityValues = {
     "Very Low": 0,
@@ -37,6 +33,11 @@ const TodoForm = ({ createTodo, sortTodos }) => {
 
   const handleTextChange = e => {
     setTodoText(e.target.value);
+  };
+
+  const handleSortChange = e => {
+    setSortBy(e.target.value);
+    sortTodos(e.target.value);
   };
 
   return (

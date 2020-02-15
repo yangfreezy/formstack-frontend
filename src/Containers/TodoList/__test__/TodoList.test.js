@@ -2,17 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import TodoList from "./../TodoList";
 
-import { initialTodos } from "../../../Data/initialState";
+import { defaultTodos } from "../../../Data/defaultState";
 
 import { render } from "@testing-library/react";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<TodoList todos={initialTodos} />, div);
+  ReactDOM.render(<TodoList todos={defaultTodos} />, div);
 });
 
 it("renders multiple todos", () => {
-  const { getByTestId } = render(<TodoList todos={initialTodos} />);
+  const { getByTestId } = render(<TodoList todos={defaultTodos} />);
   expect(getByTestId("TodoList-List")).toContainElement(
     getByTestId("TodoItem-ListItem-0")
   );

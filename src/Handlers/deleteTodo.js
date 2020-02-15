@@ -1,4 +1,4 @@
-const deleteTodo = ({ id, todos, setTodos }) => {
+const deleteTodo = (id, todos, setTodos) => {
   setTodos(todos.filter(todo => todo.id !== id));
 };
 

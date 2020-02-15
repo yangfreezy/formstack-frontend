@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { List } from "@material-ui/core";
 
-import { initialSelectedState } from "../../Data/initialState";
 import { TodoItem } from "../../Components";
 
-const TodoList = ({ todos, deleteTodo }) => {
-  const [selectedIndex, setSelectedIndex] = useState(initialSelectedState);
+import { defaultSelected } from "../../Data/defaultState";
+
+const TodoList = ({ todos, deleteTodo, setTodos }) => {
+  const [selectedIndex, setSelectedIndex] = useState(defaultSelected);
 
   const handleListItemClick = index => {
     setSelectedIndex(index);

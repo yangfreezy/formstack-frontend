@@ -29,11 +29,7 @@ const Selection = ({
       >
         {options.map((option, i) => {
           return (
-            <MenuItem
-              data-testid={"Selection-MenuItem-" + i}
-              value={option}
-              key={i}
-            >
+            <MenuItem value={option} key={i}>
               {option}
             </MenuItem>
           );

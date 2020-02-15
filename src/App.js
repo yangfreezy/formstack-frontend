@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 
 import { TodoList, TodoForm } from "./Containers/index";
-import { initialTodos, initialId } from "./Data/initialState";
 
-import { createTodo, deleteTodo, sortTodos } from "./Handlers/Todo/index.js";
+import { defaultTodos, defaultId } from "./Data/defaultState";
+
+import { createTodo, deleteTodo, sortTodos } from "./Handlers/index.js";
 
 import "./styles.css";
 
 function App() {
-  const [todos, setTodos] = useState(initialTodos);
-  const [id, setId] = useState(initialId);
+  const [todos, setTodos] = useState(defaultTodos);
+  const [id, setId] = useState(defaultId);
 
   const handleCreate = (e, text, priority, priorityValue) => {
     createTodo(e, text, priority, priorityValue, setTodos, todos, setId, id);
