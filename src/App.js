@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { TodoList, TodoForm } from "./Containers/index";
 
@@ -9,8 +9,12 @@ import { createTodo, deleteTodo, sortTodos } from "./Handlers/index.js";
 import "./styles.css";
 
 function App() {
-  const [todos, setTodos] = useState(defaultTodos);
+  const [todos, setTodos] = useState(
+    JSON.parse(localStorage.getItem("todos")) || defaultTodos
+  );
   const [id, setId] = useState(defaultId);
+
+  useEffect(() => {}, [id, todos]);
 
   const handleCreate = (e, text, priority, priorityValue) => {
     createTodo(e, text, priority, priorityValue, setTodos, todos, setId, id);

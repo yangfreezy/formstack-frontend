@@ -9,8 +9,11 @@ const createTodo = (
   id
 ) => {
   e.preventDefault();
-  setTodos([...todos, { id, text, priority, priorityValue }]);
-  setId(id + 1);
+  let newTodos = [...todos, { id, text, priority, priorityValue }];
+  let newId = id + 1;
+  setTodos(newTodos);
+  setId(newId);
+  localStorage.setItem("todos", JSON.stringify(newTodos));
 };
 
 export default createTodo;

@@ -11,6 +11,7 @@ const sortTodos = (sortBy, todos, setTodos) => {
     });
   }
   setTodos(newTodos);
+  localStorage.setItem("todos", JSON.stringify(newTodos));
 };
 
 export default sortTodos;
