@@ -1,18 +1,42 @@
-#The Process
+# The Process
 
-Using: Create-react-app, Material UI
+Using: Create-React-App, Material UI, Jest and React testing library.
+
+Containers: TodoList, TodoForm
+
+Components: TodoItem, Selection, InputBar
+
+Handlers: createTodo, deleteTodo, sortTodos
+
+Sort: Able to sort todo items by priority (very high - very low) and order created (id number)
+
+Selection: Able to highlight a todo
+
+_________
+
+Time log:
+_________
 
 Session 1:
-Time: 4:15 PM - 6:35 PM (2 5-10 min breaks taken)
-Priorities: Minimum requirements
-Completed:
+Time: 4:15 PM - 6:35 PM (2x 5-10 min breaks)
 
-- initialState added
-- TodoList added
-- TodoForm added
-- Delete added
-- Sort added
+Priorities: Meet basic requirements
+
+Completed:
+- added initialState.js
+- added TodoList
+- added TodoForm
+- added Delete
+- added Sort
+_________
 
 Session 2:
-Time: TBD
-Priorities: Refactor code, tests, integrate bonuses
+Time: 10:00 AM - 12:00 PM (2x 5-10 min breaks)
+
+Priorities: Clean up any redundant code, refactor for reusability, add tests to components/containers
+
+Completed:
+- refactored InputBar, Selection components to be reusable
+- added render tests to all components/containers
+- moved create, delete and sort todos to handlers folder
+- cleaned up redundant code
