@@ -1,10 +1,14 @@
 # The Process
 
-Using: Create-react-app, Material UI
+Using: Create-React-App, Material UI, Jest and React testing library.
 
 Containers: TodoList, TodoForm
 
 Components: TodoItem, Selection, InputBar
+
+Sort: Able to sort todo items by priority (very high - very low) and order created (id number)
+
+Selection: Able to highlight a todo
 
 Time log:
 _________
