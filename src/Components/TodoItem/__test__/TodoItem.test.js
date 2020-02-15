@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import TodoItem from "./../TodoItem";
 
 import { render } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
 
 const testTodo = {
   id: 0,

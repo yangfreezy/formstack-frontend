@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import InputBar from "./../InputBar";
 
 import { render } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
 
 const testData = {
   value: "test",
