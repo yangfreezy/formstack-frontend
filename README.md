@@ -10,6 +10,8 @@ Sort: Able to sort todo items by priority (very high - very low) and order creat
 
 Selection: Able to highlight a todo
 
+_________
+
 Time log:
 _________
 
