@@ -17,7 +17,8 @@ function App() {
   useEffect(() => {}, [id, todos]);
 
   const handleCreate = (e, text, priority, priorityValue) => {
-    createTodo(e, text, priority, priorityValue, setTodos, todos, setId, id);
+    e.preventDefault();
+    createTodo(text, priority, priorityValue, setTodos, todos, setId, id);
   };
 
   const handleDelete = id => {
