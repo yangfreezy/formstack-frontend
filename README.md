@@ -4,7 +4,7 @@ Hello Formstack Team!
 
 To install and start:
 - git clone https://github.com/yangfreezy/formstack-frontend.git
-- cd frontend-formstack
+- cd formstack-frontend
 - npm install
 - npm start
 
