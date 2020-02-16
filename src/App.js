@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import { TodoList, TodoForm } from "./Containers/index";
 
-import { defaultTodos, defaultId } from "./Data/defaultState";
+import { defaultTodos, defaultId } from "./data/defaultState";
 
-import { createTodo, deleteTodo, sortTodos } from "./Handlers/index.js";
+import { createTodo, deleteTodo, sortTodos } from "./handlers/index.js";
 
 import "./styles.css";
 

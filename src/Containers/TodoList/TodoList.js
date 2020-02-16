@@ -3,7 +3,7 @@ import { List } from "@material-ui/core";
 
 import { TodoItem } from "../../Components";
 
-import { defaultSelected } from "../../Data/defaultState";
+import { defaultSelected } from "../../data/defaultState";
 
 const TodoList = ({ todos, deleteTodo, setTodos }) => {
   const [selectedIndex, setSelectedIndex] = useState(defaultSelected);

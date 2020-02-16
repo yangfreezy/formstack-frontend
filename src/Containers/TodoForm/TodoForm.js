@@ -7,7 +7,7 @@ import {
   defaultPriorityValue,
   defaultSortBy,
   defaultTodoText
-} from "../../Data/defaultState";
+} from "../../data/defaultState";
 
 import "../../styles.css";
 
