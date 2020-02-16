@@ -1,4 +1,5 @@
 const createTodo = (
+  e,
   text,
   priority,
   priorityValue,
@@ -7,6 +8,7 @@ const createTodo = (
   setId,
   id
 ) => {
+  e.preventDefault();
   let newTodos = [...todos, { id, text, priority, priorityValue }];
   let newId = id + 1;
   setTodos(newTodos);

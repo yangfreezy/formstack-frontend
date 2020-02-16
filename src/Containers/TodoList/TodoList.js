@@ -5,7 +5,7 @@ import { TodoItem } from "../../Components";
 
 import { defaultSelected } from "../../data/defaultState";
 
-const TodoList = ({ todos, handleDelete, setTodos }) => {
+const TodoList = ({ todos, deleteTodo, setTodos }) => {
   const [selectedIndex, setSelectedIndex] = useState(defaultSelected);
 
   const handleListItemClick = index => {
@@ -20,7 +20,7 @@ const TodoList = ({ todos, handleDelete, setTodos }) => {
           todo={todo}
           selected={selectedIndex === todo.id}
           handleClick={() => handleListItemClick(todo.id)}
-          handleDelete={() => handleDelete(todo.id)}
+          handleDelete={() => deleteTodo(todo.id)}
         />
       ))}
     </List>
