@@ -55,7 +55,6 @@ Completed:
 - cleaned up redundant code
 
 # Additional Note
-- I would love to look more into redux, flow, and reselect and get this to work with that, but just wanted to get this done initially. Willing to add any features or functionality you'd like for me to add over the next few days. 
 
-Thanks for your time and hopefully talk soon!
+Thanks for your time and talk soon!
 
