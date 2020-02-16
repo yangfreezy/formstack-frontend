@@ -1,5 +1,3 @@
-Hello Formstack Team!
-
 # Instructions
 
 To install and start:
