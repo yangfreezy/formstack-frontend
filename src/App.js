@@ -17,7 +17,8 @@ function App() {
   useEffect(() => {}, [id, todos]);
 
   const handleCreate = (e, text, priority, priorityValue) => {
-    createTodo(e, text, priority, priorityValue, setTodos, todos, setId, id);
+    e.preventDefault();
+    createTodo(text, priority, priorityValue, setTodos, todos, setId, id);
   };
 
   const handleDelete = id => {
@@ -30,8 +31,8 @@ function App() {
 
   return (
     <div className="App">
-      <TodoForm createTodo={handleCreate} sortTodos={handleSort} />
-      <TodoList todos={todos} deleteTodo={handleDelete} />
+      <TodoForm handleCreate={handleCreate} handleSort={handleSort} />
+      <TodoList todos={todos} handleDelete={handleDelete} />
     </div>
   );
 }

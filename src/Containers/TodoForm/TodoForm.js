@@ -11,7 +11,7 @@ import {
 
 import "../../styles.css";
 
-const TodoForm = ({ createTodo, sortTodos }) => {
+const TodoForm = ({ handleCreate, handleSort }) => {
   const [todoText, setTodoText] = useState(defaultTodoText);
   const [sortBy, setSortBy] = useState(defaultSortBy);
   const [priority, setPriority] = useState(defaultPriority);
@@ -37,14 +37,14 @@ const TodoForm = ({ createTodo, sortTodos }) => {
 
   const handleSortChange = e => {
     setSortBy(e.target.value);
-    sortTodos(e.target.value);
+    handleSort(e.target.value);
   };
 
   return (
     <form
       data-testid="TodoForm-Form"
       className="form"
-      onSubmit={e => createTodo(e, todoText, priority, priorityValue)}
+      onSubmit={e => handleCreate(e, todoText, priority, priorityValue)}
     >
       <div className="form-options">
         <Selection
