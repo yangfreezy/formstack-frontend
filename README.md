@@ -1,7 +1,5 @@
 # Formstack Frontend Challenge - Yang Yu
 
-_________
-
 # Instructions
 
 To install and start:
@@ -24,10 +22,7 @@ Sort: Able to sort todo items by priority (very high - very low) and order creat
 
 Selection: Able to highlight a todo
 
-_________
-
-Time log: Split into two main sessions with a little bit of refactoring and tweaking intermittently. 
-_________
+# Time log
 
 Session 1:
 Time: 4:15 PM - 6:35 PM
@@ -57,5 +52,3 @@ Completed:
 - added render tests to all components/containers
 - moved create, delete and sort todos to handlers folder
 - cleaned up redundant code
-
-
