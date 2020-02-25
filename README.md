@@ -54,7 +54,4 @@ Completed:
 - moved create, delete and sort todos to handlers folder
 - cleaned up redundant code
 
-# Additional Note
-
-Thanks for your time and talk soon!
 
