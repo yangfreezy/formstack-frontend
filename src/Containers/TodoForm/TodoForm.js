@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 
-import { Selection, InputBar } from "../../Components/index";
+import { Selection, InputBar } from "./../../Components";
+import { Layout } from "./../../Layouts";
 
 import {
   defaultPriority,
   defaultPriorityValue,
   defaultSortBy,
   defaultTodoText
-} from "../../data/defaultState";
-
-import "../../styles.css";
+} from "./../../Data/defaultState";
 
 const TodoForm = ({ handleCreate, handleSort }) => {
   const [todoText, setTodoText] = useState(defaultTodoText);
@@ -46,7 +45,7 @@ const TodoForm = ({ handleCreate, handleSort }) => {
       className="form"
       onSubmit={e => handleCreate(e, todoText, priority, priorityValue)}
     >
-      <div className="form-options">
+      <Layout stylesClass="form-options">
         <Selection
           inputLabelText="Sort By: "
           options={["Priority", "Created"]}
@@ -63,7 +62,7 @@ const TodoForm = ({ handleCreate, handleSort }) => {
           value={priority}
           id="priority"
         />
-      </div>
+      </Layout>
       <InputBar
         handleChange={e => handleTextChange(e)}
         placeholder="Todo"

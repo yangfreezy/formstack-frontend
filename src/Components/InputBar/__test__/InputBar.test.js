@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import InputBar from "./../InputBar";
-
 import { render } from "@testing-library/react";
+
+import InputBar from "./../InputBar";
 
 const testData = {
   value: "test",

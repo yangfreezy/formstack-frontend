@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import { TodoList, TodoForm } from "./Containers/index";
-
-import { defaultTodos, defaultId } from "./data/defaultState";
-
-import { createTodo, deleteTodo, sortTodos } from "./handlers/index.js";
+import { TodoList, TodoForm } from "./Containers";
+import { Layout } from "./Layouts";
+import { defaultTodos, defaultId } from "./Data/defaultState";
+import { createTodo, deleteTodo, sortTodos } from "./Handlers";
 
 import "./styles.css";
 
@@ -30,10 +29,10 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <Layout stylesClass="App">
       <TodoForm handleCreate={handleCreate} handleSort={handleSort} />
       <TodoList todos={todos} handleDelete={handleDelete} />
-    </div>
+    </Layout>
   );
 }
 

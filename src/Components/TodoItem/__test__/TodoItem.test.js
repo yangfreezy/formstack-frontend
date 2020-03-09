@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TodoItem from "./../TodoItem";
-
 import { render } from "@testing-library/react";
+
+import TodoItem from "./../TodoItem";
 
 const testTodo = {
   id: 0,

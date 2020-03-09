@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Selection from "./../Selection";
-
 import { render } from "@testing-library/react";
+
+import Selection from "./../Selection";
 
 const testData = {
   inputLabelText: "test label",

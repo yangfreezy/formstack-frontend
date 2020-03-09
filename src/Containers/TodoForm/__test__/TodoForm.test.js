@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TodoForm from "./../TodoForm";
-
 import { render } from "@testing-library/react";
+
+import TodoForm from "./../TodoForm";
 
 it("renders without crashing", () => {
   const div = document.createElement("div");

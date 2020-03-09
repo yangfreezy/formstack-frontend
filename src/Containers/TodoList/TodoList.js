@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+
 import { List } from "@material-ui/core";
 
 import { TodoItem } from "../../Components";
 
-import { defaultSelected } from "../../data/defaultState";
+import { defaultSelected } from "../../Data/defaultState.js";
 
 const TodoList = ({ todos, handleDelete, setTodos }) => {
   const [selectedIndex, setSelectedIndex] = useState(defaultSelected);

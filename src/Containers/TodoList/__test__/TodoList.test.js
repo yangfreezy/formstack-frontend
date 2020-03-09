@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import TodoList from "./../TodoList";
 
-import { defaultTodos } from "../../../data/defaultState";
+import { defaultTodos } from "../../../Data/defaultState";
 
 import { render } from "@testing-library/react";
 
