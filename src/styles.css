@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .form-options {
   display: flex;
   flex-direction: row;
