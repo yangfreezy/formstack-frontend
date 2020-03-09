@@ -1,12 +1,9 @@
-Hello Formstack Team!
+# Formstack Frontend Challenge - Yang Yu
 
 # Instructions
 
 To install and start:
-- git clone https://github.com/yangfreezy/formstack-frontend.git
-- cd frontend-formstack
-- npm install
-- npm start
+git clone https://github.com/yangfreezy/formstack-frontend.git && cd formstack-frontend && npm install && npm start
 
 To test: 
 - npm run test, then press a
@@ -25,10 +22,7 @@ Sort: Able to sort todo items by priority (very high - very low) and order creat
 
 Selection: Able to highlight a todo
 
-_________
-
-Time log: Split into two main sessions with a little bit of refactoring and tweaking intermittently. 
-_________
+# Time log
 
 Session 1:
 Time: 4:15 PM - 6:35 PM
@@ -58,9 +52,3 @@ Completed:
 - added render tests to all components/containers
 - moved create, delete and sort todos to handlers folder
 - cleaned up redundant code
-
-# Additional Note
-- I would love to look more into redux, flow, and reselect and get this to work with that, but just wanted to get this done initially. Willing to add any features or functionality you'd like for me to add over the next few days. 
-
-Thanks for your time and hopefully talk soon!
-
